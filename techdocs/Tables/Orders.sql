@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Orders]
 (
-	[StripeOrderId] NVARCHAR(150) NOT NULL  PRIMARY KEY,	
+	[StripeOrderId] NVARCHAR(255) NOT NULL  PRIMARY KEY,	
     [TemplateId] UNIQUEIDENTIFIER FOREIGN KEY REFERENCES [dbo].[Templates](TemplateId) NOT NULL, 
     [TemplateTitle] NVARCHAR(40),
     [TemplateDescription] NVARCHAR(100),
