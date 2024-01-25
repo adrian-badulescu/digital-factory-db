@@ -2,6 +2,6 @@
 
 AS
 BEGIN
-	SELECT TOP (1) HtmlString FROM dbo.Legal
+	SELECT TOP (1) [RoHtmlStringForPdfContract], [RoHtmlStringEmailContent] FROM dbo.Legal
 END
 
