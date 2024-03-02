@@ -5,4 +5,6 @@
 	[EnHtmlStringForPdfContract] NVARCHAR(MAX) NULL,
 	[RoHtmlStringEmailContent] NVARCHAR(MAX) NOT NULL,
 	[EnHtmlStringEmailContent] NVARCHAR(MAX) NULL,
+	[RoHtmlStringPrecontractualTC] NVARCHAR(MAX) NULL,
+	[EnHtmlStringPrecontractualTC] NVARCHAR(MAX) NULL
 )
