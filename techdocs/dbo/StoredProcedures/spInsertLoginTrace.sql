@@ -2,7 +2,7 @@ CREATE PROCEDURE [dbo].[spInsertLoginTrace]
 	@Ip NVARCHAR(18),    
 	@Status NVARCHAR(100),
 	@Continent NVARCHAR(60),
-	@County NVARCHAR(120),
+	@Country NVARCHAR(120),
     @RegionName NVARCHAR(120),
     @City NVARCHAR(120),
     @District NVARCHAR(120),
@@ -13,6 +13,6 @@ CREATE PROCEDURE [dbo].[spInsertLoginTrace]
 
 AS
 BEGIN
-	INSERT INTO dbo.LoginTraces (Ip, [Status], Continent, County, RegionName, City, District, Zip, Lat, Lon, Isp)
-	VALUES (@Ip, @Status, @Continent, @County, @RegionName, @City, @District, @Zip, @Lat, @Lon, @Isp);
+	INSERT INTO dbo.LoginTraces (Ip, [Status], Continent, Country, RegionName, City, District, Zip, Lat, Lon, Isp)
+	VALUES (@Ip, @Status, @Continent, @Country, @RegionName, @City, @District, @Zip, @Lat, @Lon, @Isp);
 END

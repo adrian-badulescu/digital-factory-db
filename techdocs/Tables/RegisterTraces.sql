@@ -5,7 +5,7 @@ CREATE TABLE [dbo].[RegisterTraces]
     [TimeStamp] DATETIME DEFAULT(GETDATE()) NOT NULL,
 	[Status] NVARCHAR(100) NULL,
 	[Continent] NVARCHAR(60) NULL,
-	[County] NVARCHAR(120) NULL,
+	[Country] NVARCHAR(120) NULL,
     [RegionName] NVARCHAR(120) NULL,
     [City] NVARCHAR(120) NULL,
     [District] NVARCHAR(120) NULL,
